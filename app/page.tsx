@@ -429,7 +429,7 @@ export default function Home() {
 
       <section className="bridge section-shell" id="bridge">
         <div className="bridge-intro">
-          <span className="section-label inverted">THE BRIDGE</span>
+          <span className="section-label inverted">2.4 · THE BRIDGE</span>
           <h2>Roofline이 Chapter 2와 3을 잇는다</h2>
           <p>모델이 요구하는 바이트당 연산량과 하드웨어가 제공하는 FLOPS:bandwidth 비율을 같은 축에 놓으면, 어떤 최적화가 먹힐지 먼저 가설을 세울 수 있습니다.</p>
         </div>
