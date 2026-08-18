@@ -38,6 +38,7 @@ test("server-renders the Korean inference engineering deep dive", async () => {
   assert.match(html, /Chapter 3 · Hardware/);
   assert.match(html, /감으로 말하지 말고, 먼저 계산한다/);
   assert.match(html, /더 깊이 읽기/);
+  assert.match(html, /https:\/\/www\.baseten\.co\/inference-engineering\//);
   assert.doesNotMatch(html, /Starter Project|react-loading-skeleton|codex-preview/);
 });
 

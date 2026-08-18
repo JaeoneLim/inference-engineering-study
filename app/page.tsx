@@ -40,6 +40,12 @@ const hardwarePresets: HardwarePreset[] = [
 
 const sources = [
   {
+    group: "Book",
+    title: "Inference Engineering",
+    meta: "Philip Kiely · Baseten Books · 2026",
+    href: "https://www.baseten.co/inference-engineering/",
+  },
+  {
     group: "Models",
     title: "Attention Is All You Need",
     meta: "Vaswani et al. · NeurIPS 2017",

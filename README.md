@@ -2,6 +2,8 @@
 
 Baseten의 *Inference Engineering* Chapter 2–3을 모델 계산과 하드웨어 병목의 한 흐름으로 연결한 한국어 인터랙티브 딥다이브입니다.
 
+Book reference: [Inference Engineering | Baseten Books](https://www.baseten.co/inference-engineering/)
+
 ## 포함 내용
 
 - Transformer, attention, KV cache, MoE, diffusion의 추론 계산 경로
