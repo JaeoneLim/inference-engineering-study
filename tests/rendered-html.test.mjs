@@ -31,8 +31,8 @@ test("server-renders the Korean inference engineering deep dive", async () => {
   const html = await response.text();
   assert.match(html, /<html lang="ko"/i);
   assert.match(html, /<title>Inference Engineering — Models × Hardware<\/title>/i);
-  assert.match(html, /property="og:image" content="http:\/\/localhost\/og\.png"/i);
-  assert.match(html, /name="twitter:image" content="http:\/\/localhost\/og\.png"/i);
+  assert.match(html, /property="og:image" content="https:\/\/inference-engineering-ch2-ch3\.jae-one-lim\.chatgpt\.site\/og\.png"/i);
+  assert.match(html, /name="twitter:image" content="https:\/\/inference-engineering-ch2-ch3\.jae-one-lim\.chatgpt\.site\/og\.png"/i);
   assert.match(html, /모델은 무엇을 계산하고/);
   assert.match(html, /Chapter 2 · Models/);
   assert.match(html, /Chapter 3 · Hardware/);
@@ -55,7 +55,7 @@ test("keeps the final source free of starter preview code", async () => {
   assert.match(page, /audit-note/);
   assert.match(layout, /lang="ko"/);
   assert.match(layout, /Inference Engineering/);
-  assert.match(layout, /x-forwarded-host/);
+  assert.match(layout, /NEXT_PUBLIC_SITE_URL/);
   assert.match(layout, /\/og\.png/);
   assert.doesNotMatch(packageJson, /react-loading-skeleton|site-creator-vinext-starter/);
   assert.doesNotMatch(`${page}\n${layout}\n${css}`, /codex-preview|_sites-preview|SkeletonPreview/);
